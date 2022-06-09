@@ -21,4 +21,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Class attribute => `prompt`
 
 [Unreleased]: https://github.com/pboling/service_actor-promptable/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/pboling/service_actor-promptable/compare/...v1.0.0
+[1.0.0]: https://github.com/pboling/service_actor-promptable/compare/3079772bb43c02ebfca364d27d062e573acdb091...v1.0.0
