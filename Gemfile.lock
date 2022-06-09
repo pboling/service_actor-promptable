@@ -1,0 +1,94 @@
+PATH
+  remote: .
+  specs:
+    service_actor-promptable (1.0.0)
+      service_actor
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.2)
+    code-scanning-rubocop (0.6.1)
+      rubocop (~> 1.0)
+    coderay (1.1.3)
+    diff-lcs (1.5.0)
+    method_source (1.0.0)
+    parallel (1.22.1)
+    parser (3.1.2.0)
+      ast (~> 2.4.1)
+    pastel (0.8.0)
+      tty-color (~> 0.5)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    rainbow (3.1.1)
+    rake (13.0.6)
+    regexp_parser (2.5.0)
+    rexml (3.2.5)
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-mocks (3.11.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-support (3.11.0)
+    rubocop (1.30.1)
+      parallel (~> 1.10)
+      parser (>= 3.1.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.18.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.18.0)
+      parser (>= 3.1.1.0)
+    rubocop-lts (16.0.1)
+      rubocop-ruby2_6 (~> 1.0.7)
+    rubocop-performance (1.14.2)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rake (0.6.0)
+      rubocop (~> 1.0)
+    rubocop-rspec (2.11.1)
+      rubocop (~> 1.19)
+    rubocop-ruby2_6 (1.0.7)
+      rubocop (~> 1.30.0)
+    ruby-progressbar (1.11.0)
+    service_actor (3.1.3)
+    tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-prompt (0.23.1)
+      pastel (~> 0.8)
+      tty-reader (~> 0.8)
+    tty-reader (0.9.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      wisper (~> 2.0)
+    tty-screen (0.8.1)
+    unicode-display_width (2.1.0)
+    wisper (2.0.1)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  code-scanning-rubocop
+  pry
+  rake
+  rspec
+  rubocop-lts (~> 16.0, >= 16.0.1)
+  rubocop-performance
+  rubocop-rake
+  rubocop-rspec
+  service_actor-promptable!
+  tty-prompt
+
+BUNDLED WITH
+   2.3.15
