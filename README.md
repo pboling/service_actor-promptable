@@ -31,9 +31,36 @@ class ShouldContinue < Actor
 
   prompt_with TTY::Prompt.new
   output :answer, type: String
+  # or
+  # output :answer, type: [TrueClass, FalseClass]
 
   def call
     self.answer = prompt.ask("What is the capital of Assyria?", default: "Uh, I don't know that")
+    # or for a Yes/No query:
+    # self.answer = prompt.yes?("Do it?") # (Y/n)
+  end
+end
+```
+
+### How to test
+
+Let's say you have the `ShouldContinue` class above, how do you provide user input to test the Actor?
+
+```ruby
+require "tty/prompt"
+require "tty/prompt/test"
+
+describe ShouldContinue do
+  around do |example|
+    original = ShouldContinue.prompt
+    ShouldContinue.prompt = TTY::Prompt::Test.new
+    # Prepare a response from the user
+    ShouldContinue.prompt.input << "New Jack City\n"
+    # or for a Yes/No response:
+    # ShouldContinue.prompt.input << "Y\n"
+    ShouldContinue.prompt.input.rewind
+    example.run
+    ShouldContinue.prompt = original
   end
 end
 ```
