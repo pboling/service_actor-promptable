@@ -1,6 +1,6 @@
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/rubocop-lts/rubocop-ruby2_6][source]
+Bug reports and pull requests are welcome on GitHub at [https://github.com/pboling/service_actor-promptable][source]
 . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to
 the [code of conduct][conduct].
 
@@ -8,18 +8,18 @@ To submit a patch, please fork the project and create a patch with tests. Once y
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=rubocop-lts/rubocop-ruby2_6)][contributors]
+[![Contributors](https://contrib.rocks/image?repo=pboling/service_actor-promptable)][contributors]
 
 Made with [contributors-img][contrib-rocks].
 
 [comment]: <> (Following links are used by README, CONTRIBUTING)
 
-[conduct]: https://github.com/rubocop-lts/rubocop-ruby2_6/blob/main/CODE_OF_CONDUCT.md
+[conduct]: https://github.com/pboling/service_actor-promptable/blob/main/CODE_OF_CONDUCT.md
 
 [contrib-rocks]: https://contrib.rocks
 
-[contributors]: https://github.com/rubocop-lts/rubocop-ruby2_6/graphs/contributors
+[contributors]: https://github.com/pboling/service_actor-promptable/graphs/contributors
 
 [comment]: <> (Following links are used by README, CONTRIBUTING, Homepage)
 
-[source]: https://github.com/rubocop-lts/rubocop-ruby2_6/
+[source]: https://github.com/pboling/service_actor-promptable
