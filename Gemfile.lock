@@ -3,6 +3,7 @@ PATH
   specs:
     service_actor-promptable (1.0.0)
       service_actor
+      version_gem (~> 1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -72,7 +73,8 @@ GEM
       tty-screen (~> 0.8)
       wisper (~> 2.0)
     tty-screen (0.8.1)
-    unicode-display_width (2.1.0)
+    unicode-display_width (2.2.0)
+    version_gem (1.1.0)
     wisper (2.0.1)
 
 PLATFORMS

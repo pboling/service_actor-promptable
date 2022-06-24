@@ -3,6 +3,7 @@
 # External libraries
 require "tty/prompt"
 require "pry"
+require "version_gem/rspec"
 
 # This library
 require "service_actor/promptable"

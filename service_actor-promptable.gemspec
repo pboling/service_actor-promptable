@@ -4,7 +4,7 @@ require_relative "lib/service_actor/promptable/version"
 
 Gem::Specification.new do |spec|
   spec.name = "service_actor-promptable"
-  spec.version = ServiceActor::Promptable::VERSION
+  spec.version = ServiceActor::Promptable::Version::VERSION
   spec.authors = ["Peter Boling"]
   spec.email = ["peter.boling@gmail.com"]
 
@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
 
   # Pluggable Parent
   spec.add_dependency "service_actor"
+  spec.add_dependency "version_gem", "~> 1.1"
 
   # Tests
   spec.add_development_dependency "rspec"

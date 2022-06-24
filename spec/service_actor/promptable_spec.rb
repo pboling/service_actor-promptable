@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe ServiceActor::Promptable do
-  it "has a version number" do
-    expect(ServiceActor::Promptable::VERSION).not_to be nil
-  end
-
   context "when using prompts" do
     context "when using `call`" do
       let(:result) { PromptForInput.call }

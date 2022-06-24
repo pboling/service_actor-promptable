@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
-require "service_actor"
+# External libraries
+require "version_gem"
 
-require_relative "promptable/version"
+# This library
+require "service_actor"
+require "service_actor/promptable/version"
 
 module ServiceActor
   # Add a prompt to an actor class
@@ -42,4 +45,8 @@ module ServiceActor
       self.class.prompt = prompter
     end
   end
+end
+
+ServiceActor::Promptable::Version.class_eval do
+  extend VersionGem::Basic
 end
