@@ -73,7 +73,15 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pboling/service_actor-promptable. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/pboling/service_actor-promptable/blob/main/CODE_OF_CONDUCT.md).
+See [CONTRIBUTING.md][contributing]
+
+[contributing]: https://github.com/pboling/service_actor-promptable/blob/main/CONTRIBUTING.md
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=pboling/service_actor-promptable)]("https://github.com/pboling/service_actor-promptable/graphs/contributors")
+
+Made with [contributors-img](https://contrib.rocks).
 
 ## Versioning
 
