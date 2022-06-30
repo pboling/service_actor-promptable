@@ -2,7 +2,6 @@
 
 # External libraries
 require "tty/prompt"
-require "pry"
 require "version_gem/rspec"
 
 DEBUG = ENV["DEBUG"] == "true"
@@ -19,6 +18,7 @@ ALL_FORMATTERS = actual_version.call(2, 7) && (ENV.fetch("COVER_ALL") { ENV.fetc
 
 if DEBUG
   if debugging
+    require "pry"
     require "byebug"
   elsif minimum_version.call("2.7", "jruby")
     require "pry-debugger-jruby"
