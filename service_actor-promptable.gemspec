@@ -36,6 +36,9 @@ Gem::Specification.new do |spec|
   # Tests
   spec.add_development_dependency "rspec"
 
+  # RSpec block_is_expected DSL
+  spec.add_development_dependency "rspec-block_is_expected", "~> 1.0"
+
   # Development Tasks
   spec.add_development_dependency "rake"
 
