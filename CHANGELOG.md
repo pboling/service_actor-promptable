@@ -13,10 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-## [1.0.1] - 2022-06-24
+## [1.0.1] - 2022-06-30
 ### Added
 - Introspectable Version module
 - Better documentation
+- Code coverage analysis in CI
 
 ## [1.0.0] - 2022-06-09
 ### Added
