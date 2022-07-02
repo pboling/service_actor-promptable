@@ -16,8 +16,7 @@ if RUN_COVERAGE
     enable_coverage :branch
     primary_coverage :branch
     add_filter "spec"
-    add_filter "lib/gitmoji/regex/version.rb"
-    add_filter "src/regex.rb"
+    add_filter "lib/service_actor/promptable/version.rb"
     track_files "**/*.rb"
 
     if ALL_FORMATTERS
@@ -26,7 +25,7 @@ if RUN_COVERAGE
       formatter SimpleCov::Formatter::HTMLFormatter
     end
 
-    minimum_coverage(100)
+    minimum_coverage(93, 75)
   end
 else
   puts "Not running coverage on #{RUBY_ENGINE} #{RUBY_VERSION}"

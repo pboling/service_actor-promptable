@@ -167,9 +167,36 @@ class ShouldContinue < Actor
   def call
     self.answer = prompt.ask("What is the capital of Assyria?", default: "Uh, I don't know that")
     # or for a Yes/No query:
-    # self.answer = prompt.yes?("Do it?") # (Y/n)
+    # 
   end
 end
+```
+
+If you have an actor that may be run unattended, and thus want to skip the prompts:
+```rb
+require "tty/prompt"
+
+class ShouldContinue < Actor
+  include ServiceActor::Promptable
+
+  prompt_with TTY::Prompt.new, unattended_options: { prompt_toggle: :unattended, answer_with: true}
+  output :answer, type: String
+
+  def call
+    # When not running unattended, this will prompt as normal.
+    # When running unattended it will use the `answer_with` value.
+    self.answer = prompt.yes?("Do it?")
+  end
+end
+
+# Run unattended:
+ShouldContinue.call(unattended: true) # will not prompt, and `answer` will be `true`!
+
+# Run the same class, no code changes, but attended:
+ShouldContinue.call(unattended: false) # will prompt!
+
+# Attended (unattended: false) is the default for classes that include ServiceActor::Promptable (obviously!)
+ShouldContinue.call # will prompt!
 ```
 
 ### How to test

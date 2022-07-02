@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.1] - 2022-06-30
 ### Added
+- Supports running unattended, with configurable toggle
+
+## [1.0.1] - 2022-06-30
+### Added
 - Introspectable Version module
 - Better documentation
 - Code coverage analysis in CI
