@@ -2,7 +2,9 @@
 
 # External libraries
 require "tty/prompt"
+require "tty/prompt/test"
 require "version_gem/rspec"
+require "rspec/block_is_expected"
 
 DEBUG = ENV["DEBUG"] == "true"
 

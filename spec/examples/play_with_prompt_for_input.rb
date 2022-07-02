@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require "tty/prompt"
-require "tty/prompt/test"
-
 class PlayWithPromptForInput < Actor
   include ServiceActor::Promptable
 

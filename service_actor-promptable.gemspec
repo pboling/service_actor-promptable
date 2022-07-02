@@ -62,5 +62,6 @@ Gem::Specification.new do |spec|
   # Formatter for GitHub’s code scanning
   spec.add_development_dependency "code-scanning-rubocop"
 
+  # A prompt library
   spec.add_development_dependency "tty-prompt"
 end
